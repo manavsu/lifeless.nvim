@@ -71,7 +71,7 @@ else
 	colors.green = "#b1b1b1" -- gray
 	colors.redDark = "#616161" -- dark gray
 	colors.purpleDark = "#565656" -- dark gray
-	colors.comment = "#a8a8a8" -- gray
+	colors.comment = "#2e222e" -- purple
 	colors.symbol = "#bbbbbb" -- gray
 	colors.primary = "#ffffff" -- white
 	colors.terminalBrightBlack = "#5c5c5c" -- dark gray
