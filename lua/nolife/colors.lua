@@ -26,20 +26,20 @@ if vim.o.background == "light" then
 	colors.borderFocus = "#aaaaaa"
 	colors.borderDarker = "#999999"
 	-- ui colors
-	colors.blue = "#616161" -- replaced with gray
-	colors.red = "#757575" -- replaced with gray
-	colors.purple = "#8d8d8d" -- replaced with gray
-	colors.redDark = "#5e5e5e" -- replaced with gray
-	colors.orange = "#9e9e9e" -- replaced with gray
-	colors.blueLight = "#bdbdbd" -- replaced with light gray
-	colors.comment = "#848484"
-	colors.orangeLight = "#dadada" -- replaced with light gray
-	colors.green = "#a1a1a1" -- replaced with gray
-	colors.yellowDark = "#cdcdcd" -- replaced with light gray
-	colors.purpleDark = "#800080" -- kept as is
-	colors.symbol = "#a1a1a1"
-	colors.primary = "#000000"
-	colors.terminalerightblack = "#333333"
+	colors.blue = "#bdbdbd" -- light gray
+	colors.red = "#9e9e9e" -- gray
+	colors.purple = "#7e7e7e" -- gray
+	colors.redDark = "#616161" -- dark gray
+	colors.orange = "#8d8d8d" -- gray
+	colors.blueLight = "#d3d3d3" -- lighter gray
+	colors.comment = "#a8a8a8" -- gray
+	colors.orangeLight = "#cacaca" -- light gray
+	colors.green = "#b1b1b1" -- gray
+	colors.yellowDark = "#d4d4d4" -- lighter gray
+	colors.purpleDark = "#565656" -- dark gray
+	colors.symbol = "#b5b5b5" -- gray
+	colors.primary = "#000000" -- black
+	colors.terminalerightblack = "#4a4a4a" -- dark gray
 else
 	-- background colors
 	colors.bg = config.transparent and "NONE" or "#212121"
@@ -61,20 +61,20 @@ else
 	colors.borderFocus = "#444444"
 	colors.borderDarker = "#363636"
 	-- ui colors
-	colors.red = "#ff7a84" -- kept as is
-	colors.blue = "#79b8ff" -- kept as is
-	colors.orange = "#ff9800" -- kept as is
-	colors.purple = "#b392f0" -- kept as is
-	colors.blueLight = "#9db1c5" -- kept as is
-	colors.orangeLight = "#ffab70" -- kept as is
-	colors.yellowDark = "#cd9731" -- kept as is
-	colors.green = "#22863a" -- kept as is
-	colors.redDark = "#cd3131" -- kept as is
-	colors.purpleDark = "#800080" -- kept as is
-	colors.comment = "#6b737c"
-	colors.symbol = "#bbbbbb"
-	colors.primary = "#ffffff"
-	colors.terminalBrightBlack = "#5c5c5c"
+	colors.red = "#8d8d8d" -- gray
+	colors.blue = "#a9a9a9" -- light gray
+	colors.orange = "#bfbfbf" -- light gray
+	colors.purple = "#c7c7c7" -- light gray
+	colors.blueLight = "#d3d3d3" -- lighter gray
+	colors.orangeLight = "#dfdfdf" -- light gray
+	colors.yellowDark = "#cdcdcd" -- light gray
+	colors.green = "#b1b1b1" -- gray
+	colors.redDark = "#616161" -- dark gray
+	colors.purpleDark = "#565656" -- dark gray
+	colors.comment = "#a8a8a8" -- gray
+	colors.symbol = "#bbbbbb" -- gray
+	colors.primary = "#ffffff" -- white
+	colors.terminalBrightBlack = "#5c5c5c" -- dark gray
 end
 
 return colors
