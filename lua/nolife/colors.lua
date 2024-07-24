@@ -42,7 +42,7 @@ if vim.o.background == "light" then
 	colors.terminalBrightBlack = "#5c5c5c" -- dark gray
 else
 	-- background colors
-	colors.bg = config.transparent and "NONE" or "#212121"
+	colors.bg = "#13122b"
 	colors.bgDark = "#1a1a1a"
 	colors.bgDarker = "#292929"
 	colors.bgFloat = "#383838"
