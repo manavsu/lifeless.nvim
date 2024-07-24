@@ -7,7 +7,7 @@ local colors = {
 
 if vim.o.background == "light" then
 	-- background colors
-	colors.bg = "#13122b"
+	colors.bg = config.transparent and "NONE" or "#212121"
 	colors.bgDark = "#1a1a1a"
 	colors.bgDarker = "#292929"
 	colors.bgFloat = "#383838"
@@ -42,13 +42,13 @@ if vim.o.background == "light" then
 	colors.terminalBrightBlack = "#5c5c5c" -- dark gray
 else
 	-- background colors
-	colors.bg = "#13122b"
+	colors.bg = config.transparent and "NONE" or "#080052"
 	colors.bgDark = "#1a1a1a"
 	colors.bgDarker = "#292929"
 	colors.bgFloat = "#383838"
 	colors.bgOption = "#282828"
 	-- foreground colors
-	colors.fg = "#c1c1c1"
+	colors.fg = "#ffffff"
 	colors.fgAlt = "#fafafa"
 	colors.fgCommand = "#e0e0e0"
 	colors.fgInactive = "#484848"
