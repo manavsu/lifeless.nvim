@@ -2,9 +2,9 @@ local theme = require("nolife/init")
 
 theme.setup({
 	theme = "dark",
-	transparent = true,
+	transparent = false,
 	italics = {
-		comments = false,
+		comments = true,
 		keywords = true,
 		functions = true,
 		strings = false,
