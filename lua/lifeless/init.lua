@@ -7,7 +7,7 @@ local theme = {}
 
 local function set_terminal_colors()
 	vim.g.terminal_color_0 = colors.bg
-	vim.g.terminal_color_1 = colors.red
+	vim.g.terminal_color_1 = colors.gray
 	vim.g.terminal_color_2 = colors.green
 	vim.g.terminal_color_3 = colors.yellowDark
 	vim.g.terminal_color_4 = colors.blue
@@ -19,7 +19,7 @@ local function set_terminal_colors()
 	vim.g.terminal_color_10 = colors.orangeLight
 	vim.g.terminal_color_11 = colors.orange
 	vim.g.terminal_color_12 = colors.symbol
-	vim.g.terminal_color_13 = colors.red
+	vim.g.terminal_color_13 = colors.gray
 	vim.g.terminal_color_14 = colors.orangeLight
 	vim.g.terminal_color_15 = colors.comment
 	vim.g.terminal_color_background = colors.bg
@@ -29,7 +29,7 @@ end
 local function set_groups()
 	local bg = config.transparent and "NONE" or colors.bg
 	local diff_add = utils.shade(colors.green, 0.5, colors.bg)
-	local diff_delete = utils.shade(colors.red, 0.5, colors.bg)
+	local diff_delete = utils.shade(colors.gray, 0.5, colors.bg)
 	local diff_change = utils.shade(colors.blue, 0.5, colors.bg)
 	local diff_text = utils.shade(colors.yellowDark, 0.5, colors.bg)
 
@@ -61,7 +61,7 @@ local function set_groups()
 		IncSearch = { bg = utils.mix(colors.blue, colors.bg, math.abs(0.30)), fg = colors.bg },
 		Substitute = { link = "IncSearch" },
 		CursorLineNr = { fg = colors.comment },
-		MatchParen = { fg = colors.red, bg = bg },
+		MatchParen = { fg = colors.gray, bg = bg },
 		ModeMsg = { link = "Normal" },
 		MsgArea = { link = "Normal" },
 		-- MsgSeparator = {},
@@ -94,7 +94,7 @@ local function set_groups()
 		WildMenu = { bg = colors.bgOption },
 		Comment = { fg = colors.comment, italic = config.italics.comments or false },
 
-		Constant = { fg = colors.red },
+		Constant = { fg = colors.gray },
 		String = { fg = colors.orangeLight, italic = config.italics.strings or false },
 		Character = { fg = colors.orangeLight },
 		Number = { fg = colors.primary, bold = true },
@@ -107,19 +107,19 @@ local function set_groups()
 		Property = { fg = colors.blue },
 		Field = { link = "Property" },
 		Parameter = { fg = colors.fg },
-		Statement = { fg = colors.red },
-		Conditional = { fg = colors.red },
+		Statement = { fg = colors.gray },
+		Conditional = { fg = colors.gray },
 		-- Repeat = {},
 		Label = { fg = colors.blue },
-		Operator = { fg = colors.red },
+		Operator = { fg = colors.gray },
 		Keyword = { link = "Statement", italic = config.italics.keywords or false },
-		Exception = { fg = colors.red },
+		Exception = { fg = colors.gray },
 
 		PreProc = { link = "Keyword" },
 		-- Include = {},
 		Define = { fg = colors.purple },
 		Macro = { link = "Define" },
-		PreCondit = { fg = colors.red },
+		PreCondit = { fg = colors.gray },
 
 		Type = { fg = colors.purple },
 		Struct = { link = "Type" },
@@ -133,7 +133,7 @@ local function set_groups()
 		Punctuation = { fg = colors.symbol },
 		Special = { fg = colors.green },
 
-		SpecialChar = { fg = colors.red },
+		SpecialChar = { fg = colors.gray },
 		Tag = { fg = colors.orangeLight },
 		Delimiter = { fg = colors.symbol },
 		-- SpecialComment = {},
@@ -200,7 +200,7 @@ local function set_groups()
 		["@punctuation"] = { link = "Punctuation" },
 		["@punctuation.bracket"] = { fg = colors.yellowDark },
 		["@punctuation.delimiter"] = { link = "Delimiter" },
-		["@punctuation.separator.keyvalue"] = { fg = colors.red },
+		["@punctuation.separator.keyvalue"] = { fg = colors.gray },
 
 		["@texcolors.diff.add"] = { fg = colors.green },
 		["@texcolors.diff.delete"] = { fg = colors.redDark },

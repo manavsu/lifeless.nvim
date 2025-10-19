@@ -26,7 +26,8 @@ if vim.o.background == "light" then
 	colors.borderFocus = "#444444"
 	colors.borderDarker = "#363636"
 	-- ui colors
-	colors.red = "#9e8d8d" -- gray
+	colors.gray = "#8d8d8d"
+	colors.gray = "#8d8d8d"
 	colors.blue = "#a9a9a9" -- light gray
 	colors.orange = "#bfbfbf" -- light gray
 	colors.purple = "#c7c7c7" -- light gray
@@ -61,7 +62,8 @@ else
 	colors.borderFocus = "#444444"
 	colors.borderDarker = "#363636"
 	-- ui colors
-	colors.red = "#9e8d8d" -- gray
+	colors.gray = "#9e8d8d"
+	colors.red = "#8d8d8d"
 	colors.blue = "#a9a9a9" -- light gray
 	colors.orange = "#efdabf" -- light gray
 	colors.purple = "#c7c7c7" -- light gray
