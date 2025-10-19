@@ -4,10 +4,10 @@ local config = {
 		transparent = false,
 		italics = {
 			comments = true,
-			keywords = true,
-			functions = true,
+			keywords = false,
+			functions = false,
 			strings = true,
-			variables = true,
+			variables = false,
 			bufferline = false,
 		},
 		overrides = {},
