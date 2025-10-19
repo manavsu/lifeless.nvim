@@ -66,7 +66,7 @@ local function set_groups()
 		MsgArea = { link = "Normal" },
 		-- MsgSeparator = {},
 		MoreMsg = { fg = colors.blue },
-		NonText = { fg = utils.shade(colors.bg, 0.30) },
+		NonText = { fg = colors.terminalBrightBlack },
 		NormalFloat = { bg = colors.bgFloat },
 		NormalNC = { link = "Normal" },
 		Pmenu = { link = "NormalFloat" },
@@ -131,7 +131,7 @@ local function set_groups()
 
 		Attribute = { link = "Character" },
 		Punctuation = { fg = colors.symbol },
-		Special = { fg = colors.symbol },
+		Special = { fg = colors.green },
 
 		SpecialChar = { fg = colors.red },
 		Tag = { fg = colors.orangeLight },
