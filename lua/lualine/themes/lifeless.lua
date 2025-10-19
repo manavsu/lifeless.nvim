@@ -7,7 +7,7 @@ local bg = config.transparent and "NONE" or colors.bg
 theme.normal = {
 	a = { bg = colors.blue, fg = colors.bg, gui = "bold" },
 	b = { bg = bg, fg = colors.comment },
-	c = { bg = bg, fg = colors.bg },
+	c = { bg = bg, fg = colors.fg },
 }
 
 theme.insert = {
