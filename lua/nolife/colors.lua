@@ -1,4 +1,4 @@
-local config = require("nolife.config")
+local config = require("lifeless.config")
 
 local colors = {
 	white = "#ffffff",

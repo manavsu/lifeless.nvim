@@ -1,5 +1,5 @@
-local colors = require("nolife.colors")
-local config = require("nolife.config")
+local colors = require("lifeless.colors")
+local config = require("lifeless.config")
 local theme = {}
 
 local bg = config.transparent and "NONE" or colors.bg

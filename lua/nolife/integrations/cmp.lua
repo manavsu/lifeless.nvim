@@ -1,4 +1,4 @@
-local colors = require("nolife.colors")
+local colors = require("lifeless.colors")
 
 local M = {}
 

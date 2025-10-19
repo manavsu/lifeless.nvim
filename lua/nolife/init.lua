@@ -1,8 +1,8 @@
-local colors = require("nolife.colors")
-local config = require("nolife.config")
-local utils = require("nolife.utils")
-local bufferline = require("nolife.integrations.bufferline")
-local cmp = require("nolife.integrations.cmp")
+local colors = require("lifeless.colors")
+local config = require("lifeless.config")
+local utils = require("lifeless.utils")
+local bufferline = require("lifeless.integrations.bufferline")
+local cmp = require("lifeless.integrations.cmp")
 local theme = {}
 
 local function set_terminal_colors()
@@ -299,7 +299,7 @@ end
 
 function theme.colorscheme()
 	if vim.version().minor < 8 then
-		vim.notify("Neovim 0.8+ is required for nolife colorscheme", vim.log.levels.ERROR, { title = "Min Theme" })
+		vim.notify("Neovim 0.8+ is required for lifeless colorscheme", vim.log.levels.ERROR, { title = "Min Theme" })
 		return
 	end
 
@@ -310,7 +310,7 @@ function theme.colorscheme()
 
 	vim.g.VM_theme_set_by_colorscheme = true -- Required for Visual Multi
 	vim.o.termguicolors = true
-	vim.g.colors_name = "nolife"
+	vim.g.colors_name = "lifeless"
 
 	set_terminal_colors()
 	set_groups()

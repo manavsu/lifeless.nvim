@@ -1,2 +1,2 @@
 vim.o.background = "light"
-require("nolife").colorscheme()
+require("lifeless").colorscheme()

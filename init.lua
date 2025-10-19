@@ -1,4 +1,4 @@
-local theme = require("nolife/init")
+local theme = require("lifeless/init")
 
 theme.setup({
 	theme = "dark",

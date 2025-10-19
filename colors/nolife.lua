@@ -1,1 +1,1 @@
-require("nolife").colorscheme()
+require("lifeless").colorscheme()
