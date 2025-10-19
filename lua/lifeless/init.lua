@@ -90,7 +90,7 @@ local function set_groups()
 		Visual = { bg = utils.shade(colors.blue, 0.40, colors.bg) },
 		VisualNOS = { link = "Visual" },
 		WarningMsg = { fg = colors.orange },
-		Whitespace = { fg = colors.symbol },
+		Whitespace = { fg = colors.fgInactive },
 		WildMenu = { bg = colors.bgOption },
 		Comment = { fg = colors.comment, italic = config.italics.comments or false },
 
@@ -278,10 +278,10 @@ local function set_groups()
 		["@lsp.typemod.function.readonly"] = { link = "@function" },
 	}
 
-  -- integrations
-  groups = vim.tbl_extend("force", groups, cmp.highlights())
+	-- integrations
+	groups = vim.tbl_extend("force", groups, cmp.highlights())
 
-  -- overrides
+	-- overrides
 	groups =
 		vim.tbl_extend("force", groups, type(config.overrides) == "function" and config.overrides() or config.overrides)
 
