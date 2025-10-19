@@ -1,7 +1,7 @@
 local config = require("lifeless.config")
 
 local colors = {
-	white = "#ffffff",
+	white = "#dddddd",
 	black = "#000000",
 }
 
@@ -48,7 +48,7 @@ else
 	colors.bgFloat = "#383838"
 	colors.bgOption = "#282828"
 	-- foreground colors
-	colors.fg = "#ffffff"
+	colors.fg = "#dddddd"
 	colors.fgAlt = "#fafafa"
 	colors.fgCommand = "#e0e0e0"
 	colors.fgInactive = "#484848"
@@ -78,4 +78,3 @@ else
 end
 
 return colors
-
