@@ -49,7 +49,7 @@ else
 	colors.bgFloat = "#383838"
 	colors.bgOption = "#282828"
 	-- foreground colors
-	colors.fg = "#cccccc"
+	colors.fg = "#aaaaaa"
 	colors.fgAlt = "#fafafa"
 	colors.fgCommand = "#e0e0e0"
 	colors.fgInactive = "#484848"
@@ -63,7 +63,7 @@ else
 	colors.borderDarker = "#363636"
 	-- ui colors
 	colors.red = "#9e8d8d"
-	colors.white = "#eeeeee"
+	colors.white = "#ffffff"
 	colors.gray = "#8d8d8d"
 	colors.blue = "#a9a9a9" -- light gray
 	colors.orange = "#efdabf" -- light gray
