@@ -63,7 +63,7 @@ else
 	colors.borderDarker = "#363636"
 	-- ui colors
 	colors.red = "#9e8d8d"
-	colors.white = "#cccccc"
+	colors.white = "#eeeeee"
 	colors.gray = "#8d8d8d"
 	colors.blue = "#a9a9a9" -- light gray
 	colors.orange = "#efdabf" -- light gray
