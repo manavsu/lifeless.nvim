@@ -223,7 +223,7 @@ local function set_groups()
 		["@function"] = { link = "FunctionDefinition" },
 		["@function.call"] = { link = "Function" },
 		["@function.builtin"] = { link = "Function" },
-		-- ["@function.macro"] = {},
+		["@function.macro"] = { link = "Function" },
 		["@parameter"] = { link = "Parameter" },
 		["@method"] = { link = "FunctionDefinition" },
 		["@method.call"] = { link = "Function" },
