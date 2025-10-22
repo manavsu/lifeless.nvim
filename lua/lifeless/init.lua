@@ -274,7 +274,7 @@ local function set_groups()
 		["@lsp.type.parameter"] = { link = "@parameter" },
 		["@lsp.type.property"] = { link = "@text" },
 		["@lsp.type.enumMember"] = { link = "@constant" },
-		["@lsp.type.function"] = { link = "@function" },
+		["@lsp.type.function"] = { link = "Function" },
 		["@lsp.type.method"] = { link = "@method" },
 		["@lsp.type.macro"] = { link = "@label" },
 		["@lsp.type.decorator"] = { link = "@label" },
