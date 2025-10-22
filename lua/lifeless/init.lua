@@ -220,7 +220,7 @@ local function set_groups()
 		["@boolean"] = { link = "Boolean" },
 		-- ["@float"] = {},
 		-- ["@function"] = { link = "Function", italic = config.italics.functions or false },
-		["@type.function"] = { link = "FunctionDefinition" },
+		["@function"] = { link = "FunctionDefinition" },
 		["@function.call"] = { link = "Function" },
 		["@function.builtin"] = { link = "Function" },
 		-- ["@function.macro"] = {},
@@ -317,6 +317,18 @@ function theme.colorscheme()
 	vim.g.colors_name = "lifeless"
 
 	set_terminal_colors()
+
+	-- Prefer Tree-sitter highlights over LSP semantic tokens when available.
+	pcall(function()
+		if vim.highlight and vim.highlight.priorities then
+			local p = vim.highlight.priorities
+			local ts = p.treesitter or 110
+			local sem = p.semantic_tokens or 125
+			if sem >= ts then
+				p.semantic_tokens = ts - 1
+			end
+		end
+	end)
 	set_groups()
 end
 
